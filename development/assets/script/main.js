@@ -313,4 +313,66 @@ let data = [
 	}
 ];
 
-console.log('👻', data)
+
+data = data.filter((person) => {
+	return person.id !== 52
+})
+
+let asistants = data.filter((person) =>  {
+	return person.assistant === true;
+})
+
+let yellowGroup = data.filter((person) => {
+	return person.group === "Yellow"
+})
+
+let crimsonGroup = data.filter((person) => {
+	return person.group === "Crimson"
+} )
+
+let turquoiseGroup = data.filter((person) => {
+	return person.group === "Turquoise"
+})
+
+let aquamarineGroup = data.filter((person) => {
+	return person.group === "Aquamarine"
+})
+
+let puceGroup = data.filter((person) => {
+	return person.group === "Puce"
+})
+let goldenrodGroup = data.filter((person) => {
+	return person.group === "Goldenrod"
+})
+
+let pinkGroup = data.filter((person) => {
+	return person.group === "Pink"
+})
+
+let khakiGroup = data.filter((person) => {
+	return person.group === "Khaki"
+})
+
+let orangeGroup = data.filter((person) => {
+	return person.group === "Orange"
+})
+
+let maroonGroup = data.filter((person) => {
+	return person.group === "Maroon"
+})
+
+let purpleGroup = data.filter((person) => {
+	return person.group === "Purple"
+})
+
+let fusciaGroup = data.filter((person) => {
+	return person.group === "Fuscia"
+})
+
+console.log('😎', data);
+
+
+
+
+
+

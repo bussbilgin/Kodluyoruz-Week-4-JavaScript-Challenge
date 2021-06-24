@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.container {
+    font-family: $Rubik;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $container;
+
+    &-card {
+        margin-bottom: 10px;
+        border-radius: 10px;
+        background-color: $card;
+
+        &__asistant {
+            font-size: $medium;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center; 
+        }
+
+        &__student {
+            padding: 50px;
+            font-size: $small;
+        }
+    }
+
+    &-card:hover {
+        background-color: $hover;
+        border: 5px solid $card;
+        color: $font;
+    }
+}
